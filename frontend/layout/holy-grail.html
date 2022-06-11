@@ -1,0 +1,72 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Holy grail</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        #container {
+            height: 100%;
+            display: grid;
+            grid-template: auto 1fr auto / auto 1fr auto;
+        }
+
+        header {
+            background-color: coral;
+            grid-column: 1 / 4;
+        }
+
+        aside .left {
+            background-color: darkgoldenrod;
+            grid-column: 1 / 2;
+        }
+
+        aside .right {
+            background-color: darkgoldenrod;
+            grid-column: 3 / 4;
+        }
+
+        article {
+            background-color: darkslateblue;
+            grid-column: 2 / 3;
+        }
+
+        footer {
+            background-color: darkcyan;
+            grid-column: 1 / 4;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <header>
+        <ul>
+            <li>Header content</li>
+            <li>More content</li>
+        </ul>
+    </header>
+    <aside class="left">
+        <ul>
+            <li>Menu item 1</li>
+            <li>Menu item 2</li>
+            <li>Menu item 3</li>
+        </ul>
+    </aside>
+    <article>Article</article>
+    <aside class="right">
+        <p>Additional content</p>
+    </aside>
+    <footer>
+        <ul>
+            <li>Footer content</li>
+            <li>More content</li>
+        </ul>
+    </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>12 span grid</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        #container {
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+        }
+
+        .span-12 {
+            background-color: coral;
+            grid-column: 1 / 13;
+        }
+
+        .span-6 {
+            background-color: darkgoldenrod;
+            grid-column: 1 / 7;
+        }
+
+        .span-4 {
+            background-color: bisque;
+            grid-column: 4 / 8;
+        }
+
+        .span-2 {
+            background-color: beige;
+            grid-column: 3 / 5;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div class="span-12">Span 12</div>
+    <div class="span-6">Span 6</div>
+    <div class="span-4">Span 4</div>
+    <div class="span-2">Span 2</div>
+</div>
+</body>
+</html>
